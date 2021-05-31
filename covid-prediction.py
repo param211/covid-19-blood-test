@@ -71,4 +71,3 @@ predict_data = [hcm, hemoglobin, mchc, rdw_cv, rdw_sd, vcm, basophils,
 prediction = classifier.predict(numpy.array(predict_data).reshape((1, -1)))
 
 st.success("Covid-19 Negative" if prediction[0] == 0 else "Covid-19 Positive")
->
